@@ -1,0 +1,35 @@
+<p>addusers works!</p>
+
+<h3>AddUsers</h3>
+
+
+<form (ngSubmit)="getAddUsers()">
+    <div>
+        <label for="name">Name:</label>
+    <input type="text" name="name" [(ngModel)]="name" placeholder="Enter name" required autofocus>
+</div> 
+<div>
+    <label for="email">Email:</label>
+    <input type="text" name="email" [(ngModel)]="email" placeholder="Enter email" required > 
+</div>
+<div>
+    <label for="password">password:</label>
+    <input type="text" name="password" [(ngModel)]="password" placeholder="Enter password" required> 
+</div>
+<div>
+    <label for="mobile">mobile:</label>
+    <input type="mobile" name="price" [(ngModel)]="mobile"  placeholder="Enter mobile" required > 
+</div>
+    <button type="submit">
+        submit
+    </button>
+</form>
+
+
+
+
+
+
+
+
+

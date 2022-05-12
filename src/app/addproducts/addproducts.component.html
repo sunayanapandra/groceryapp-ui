@@ -1,0 +1,38 @@
+<h3>AddProducts</h3>
+
+
+<form (ngSubmit)="getAddProducts()">
+    <div>
+     <label for="name">Name:</label>
+    <input type="text" name="name" [(ngModel)]="name" placeholder="Enter name" required autofocus>
+</div> 
+<div>
+    <label for="brand">Brand:</label>
+    <input type="brand" name="brand" [(ngModel)]="brand" placeholder="Enter brand" required > 
+</div>
+<div>
+    <label for="category">Category:</label>
+    <input type="category" name="category" [(ngModel)]="category" placeholder="Enter category" required> 
+</div>
+<div>
+    <label for="price">price:</label>
+    <input type="price" name="price" [(ngModel)]="price"  placeholder="Enter price" required > 
+</div>
+<div>
+    <label for="image">Image:</label>
+    <input type="text" name="image" [(ngModel)]="image" placeholder="Enter image" required>
+</div> 
+
+
+    <button type="submit">
+        submit
+    </button>
+</form>
+
+
+
+
+
+
+
+

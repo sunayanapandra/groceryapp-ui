@@ -1,0 +1,31 @@
+<h3>Registration</h3>
+
+<form (ngSubmit)="register()">
+    <div>
+        <label for="name">Name:</label>
+    <input type="text" name="name" [(ngModel)]="name" placeholder="Enter name" required autofocus>
+</div> 
+<div>
+    <label for="email">Email:</label>
+    <input type="email" name="email" [(ngModel)]="email" placeholder="Enter email" required > 
+</div>
+<div>
+    <label for="password">Password:</label>
+    <input type="password" name="password" [(ngModel)]="password" placeholder="Enter password" required> 
+</div>
+<div>
+    <label for="mobile">mobile:</label>
+    <input type="mobile" name="mobile" [(ngModel)]="mobile"  placeholder="Enter mobile number" required > 
+</div>
+    <button type="submit">
+        submit
+    </button>
+</form>
+
+
+
+
+
+
+
+

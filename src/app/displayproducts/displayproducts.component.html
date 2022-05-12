@@ -1,0 +1,22 @@
+<h3>Displayproducts</h3>
+
+
+<!--{{products |json}}-->
+<div class="row row-cols-1 row-cols-md-4 g-4">
+  <div class="col-4" *ngFor ="let product of products;">
+    <div class="card">
+      <img src="assets/image/{{product.image}}" class="card-img-top" alt="..." width="150px" height="200px">
+      <div class="card-body">
+       <div> <h5 class="card-title">{{product.name}}</h5></div>
+       <h5 class="card-title">{{product.brand}}</h5>
+       <h5><span class="badge bg-success">{{product.category}}</span></h5>
+       <h5><span class="badge bg-success">{{product.price}}</span></h5>
+
+
+       <button type="button" (click)="addToCart(product)" class="btn btn-primary">Add To Cart</button>
+       
+        <!--<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
+      </div>
+    </div>
+  </div>
+ 

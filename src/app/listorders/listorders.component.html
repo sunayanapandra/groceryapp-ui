@@ -1,0 +1,32 @@
+<p>listorders works!</p>
+
+<h2>listorders</h2>
+<table class="table table-bordered">
+    
+
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>userId</th>
+            <th>productId</th>
+            <th>purchasedOn</th>
+            <th>status</th>
+            <th>price</th>
+            
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr *ngFor="let order of orders;">
+            <td>{{order.id}}</td>
+            <td>{{order.userId}}</td>
+            <td>{{order.productId}}</td>
+            <td>{{order.purchasedOn}}</td>
+            <td>{{order.status}}</td>
+            <td>{{order.price}}</td>
+           <!-- <td><a routerLink="/updateproducts/{{product.id}}" class="btn btn-info">Edit</a></td>
+            <td><button type="button" (click)="deleteProduct(product.id)" class="btn btn-danger">Delete</button></td>-->
+           
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,39 @@
+
+<h3>UpdateProducts</h3>
+
+<!-- {{product  | json}} -->
+<form (ngSubmit)="updateProducts()">
+
+    <div>
+    <label for="id">Id:</label>
+    <input type="number" name="id" [(ngModel)]="product.id" placeholder="Enter id" required autofocus readonly>
+   </div> 
+    <div>
+        <label for="name">Name:</label>
+    <input type="text" name="name" [(ngModel)]="product.name" placeholder="Enter name" required autofocus>
+</div> 
+<div>
+    <label for="brand">Brand:</label>
+    <input type="brand" name="brand" [(ngModel)]="product.brand" placeholder="Enter brand" required > 
+</div>
+<div>
+    <label for="category">Category:</label>
+    <input type="category" name="category" [(ngModel)]="product.category" placeholder="Enter category" required> 
+</div>
+<div>
+    <label for="price">price:</label>
+    <input type="price" name="price" [(ngModel)]="product.price"  placeholder="Enter price" required > 
+</div>
+    <button type="submit">
+        submit
+    </button>
+</form>
+
+
+
+
+
+
+
+
+

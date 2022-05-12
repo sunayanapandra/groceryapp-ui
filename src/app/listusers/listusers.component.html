@@ -1,0 +1,29 @@
+<h3>ListUsers</h3>
+
+
+<table class="table table-bordered">
+
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>email</th>
+            <th>password</th>
+            <th>mobile</th>
+            
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users;">
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.password}}</td>
+            <td>{{user.mobile}}</td>
+            <td><a routerLink="/updateuser/{{user.id}}" class="btn btn-info">Edit</a></td>
+            <td><button type="button" (click)="deleteUser(user.id)" class="btn btn-danger">Delete</button></td>
+           
+        </tr>
+    </tbody>
+</table>
